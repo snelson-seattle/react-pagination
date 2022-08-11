@@ -1,9 +1,7 @@
+import Example from "./Example";
+
 function App() {
-  return (
-    <div className="App">
-      App goes here
-    </div>
-  );
+  return <Example />
 }
 
 export default App;

@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-2xl;
+  }
+
+  body {
+    @apply bg-black font-sans;
+  }
+
+  nav {
+    @apply flex flex-row flex-nowrap justify-center items-center text-white;
+  }
+
+  button {
+    @apply m-[1em] p-[1em] rounded-[15px] bg-[whitesmoke] text-black disabled:bg-gray-500 disabled:text-gray-700 disabled:cursor-not-allowed;
+  }
+
+  p {
+    @apply text-[whitesmoke];
+  }
+
+  article {
+    @apply m-[1em] p-[1em] bg-[midnightblue] text-[whitesmoke] rounded-[15px];
+  }
+
+  section {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  h1 {
+    @apply text-[whitesmoke] text-3xl self-start ml-4;
+  }
+
+  h2::first-letter, p::first-letter {
+    @apply uppercase;
+  }
+
+  img {
+    @apply rounded-[15px] block;
+  }
+}
+
